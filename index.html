@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png">
+<style>
+    .card{
+        background: linear-gradient(135deg, #00feba,#5b548a);
+        border-radius: 20px;
+    }
+   
+    .temp, .city{
+        color: #fff;
+        font-size: 60px;
+    }
+    p{
+        color: #fff;
+        font-size: 20px;
+        margin-top: -6%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+   
+</style>
+</head>
+<body class="bg-dark">
+    <div class="container mt-5 ">
+        <div class="card row m-auto p-3 text-center col-sm-12 col-md-6 col-lg-6">
+            <div class="search d-flex justify-content-between">
+                <input type="text" id="user" placeholder="Enter City,Country Name Properly" class="border-0 p-3 rounded-pill " style="outline: none; width: 75%;">
+                <button class="border-0 rounded-circle " id="btn"><img src="weather-app-img/images/search.png" alt="" width="50%"></button>
+            </div>
+
+            <section>
+                <img src="weather-app-img/images/rain.png" id="weather-img">
+                <!-- <img src="weather-app-img/images/" alt=""> -->
+              
+                <h1 class="temp fw-bolder">Temp</h1>
+                <h1 class="city fw-bolder">City</h1>
+                <div class="details">
+                    <div class="row justify-content-between mt-5 align-items-center col-12">
+                         <div class="humiditiy  d-flex  col-md-5 col-lg-4 col-sm-12 ">
+                            <img src="weather-app-img/images/humidity.png" alt="" >
+                            <div class="humiditiy-info  lh-1 ms-3">
+                                <p class="humidity">0%</p>
+                                <p>Humiditiy</p>
+                            </div>
+                        </div>
+                        <div class="air  d-flex  col-md-5 col-lg-4 col-sm-12 mt-3">
+                            <img src="weather-app-img/images/wind.png" alt="" >
+                            <div class="air-info lh-1 ms-3">
+                                <p>Air-Speed</p>
+                                <p class="air-speed">0 km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>  
+
+ <script src="script.Js"></script>
+</body>
+</html>
+
+<!-- col-4   -->
